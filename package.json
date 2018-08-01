@@ -2,9 +2,10 @@
   "name": "json-to-html",
   "version": "0.0.0",
   "description": "A react based library used to display json encoded document in html",
-  "main": "src/JsonToHtml.jsx",
+  "main": "build/JsonToHtml.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,19 @@
   },
   "homepage": "https://github.com/BlancFrancois/json-to-html#readme",
   "dependencies": {
+    "webpack": "^4.16.3"
+  },
+  "peerDependencies": {
     "react": "^16.4.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "react": "^16.4.1",
+    "webpack-command": "^0.4.1"
   }
 }
