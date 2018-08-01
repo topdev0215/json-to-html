@@ -1,10 +1,10 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/JsonToHtml.js',
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: 'JsonToHtml.js',
+    filename: 'index.js',
     libraryTarget: 'umd',
   },
   module: {
