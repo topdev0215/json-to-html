@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Leaf Node should render properly 1`] = `
+<h1>
+  This is an h1
+</h1>
+`;
