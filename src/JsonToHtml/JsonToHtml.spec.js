@@ -1,7 +1,7 @@
 import React from 'react';
 import chai from 'chai';
 import {shallow} from 'enzyme';
-import document from './jsonExamples/document';
+import document from '../jsonExamples/document';
 import {JsonToHtml} from "./JsonToHtml";
 
 describe('Leaf Node', () => {

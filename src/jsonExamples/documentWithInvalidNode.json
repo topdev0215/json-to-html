@@ -1,0 +1,19 @@
+{
+  "type": "document",
+  "nodes": [
+    {
+      "type": "paragraph",
+      "text": "This is an invalid paragraph",
+      "nodes": [
+        {
+          "type": "paragraph",
+          "text": "This is a child of an invalid paragraph"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This is a valid paragraph"
+    }
+  ]
+}
