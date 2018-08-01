@@ -1,0 +1,18 @@
+{
+  "type": "document",
+  "nodes": [
+    {
+      "type": "quote",
+      "text": "This is an invalid quote"
+    },
+    {
+      "type": "quote",
+      "nodes": [
+        {
+          "type": "paragraph",
+          "text": "This is a valid quote"
+        }
+      ]
+    }
+  ]
+}
