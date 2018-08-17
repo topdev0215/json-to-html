@@ -1,14 +1,14 @@
 import React from 'react';
-import {getHtmlTag} from "./getHtmltag";
+import {getComponent} from "./getComponent";
 import {Node} from "./Node";
 import {NodePropTypes} from "./NodePropTypes";
 
 export function ContainerNode({node, config}) {
-  const HtmlTag = getHtmlTag(config, node.type);
+  const Component = getComponent(config, node.type);
   return (
-    <HtmlTag>
+    <Component>
       {node.nodes.map((node, index) => <Node node={node} config={config} key={index}/>)}
-    </HtmlTag>
+    </Component>
   );
 }
 

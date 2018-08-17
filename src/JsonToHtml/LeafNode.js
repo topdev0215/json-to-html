@@ -1,11 +1,10 @@
 import React from 'react';
-import {getHtmlTag} from "./getHtmltag";
-import {Node} from "./Node";
+import {getComponent} from "./getComponent";
 import {NodePropTypes} from "./NodePropTypes";
 
 export function LeafNode({node, config}) {
-  const HtmlTag = getHtmlTag(config, node.type);
-  return <HtmlTag>{node.text}</HtmlTag>;
+  const Component = getComponent(config, node.type);
+  return <Component>{node.text}</Component>;
 }
 
 LeafNode.propTypes = NodePropTypes;
