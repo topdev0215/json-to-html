@@ -1,23 +1,25 @@
 import {isLeafNode} from '../utils/isLeafNode';
 
 export function normalize(document, userValidationRules = []) {
-  if (isValidNode(document, userValidationRules)) {
-    return {...document, nodes: normalizeChildrenNodes(document.nodes, userValidationRules)}
-  }
-  return {};
+  const normalizedDocument = normalizeNode(document, userValidationRules);
+  return normalizedDocument === undefined ? {} : normalizedDocument;
 }
+
+function normalizeNode(node, userValidationRules) {
+  const childrenNormalizedNode = isLeafNode(node)
+    ? node
+    : {...node, nodes: normalizeChildrenNodes(node.nodes, userValidationRules)};
+  if (isValidNode(childrenNormalizedNode, userValidationRules)) {
+    return childrenNormalizedNode;
+  }
+  return undefined;
+}
+
 
 function normalizeChildrenNodes(nodes, userValidationRules) {
   return nodes
-      .filter(node => isValidNode(node, userValidationRules))
-      .map(node => normalizeValidNode(node, userValidationRules));
-}
-
-function normalizeValidNode(node, userValidationRules) {
-  if (isLeafNode(node)) {
-    return node;
-  }
-  return {...node, nodes: normalizeChildrenNodes(node.nodes, userValidationRules)}
+      .map(node => normalizeNode(node, userValidationRules))
+      .filter(node => node !== undefined);
 }
 
 function isValidNode(node, userValidationRules) {
