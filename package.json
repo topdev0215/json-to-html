@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/BlancFrancois/json-to-html#readme",
   "dependencies": {
+    "prop-types": "^15.6.2",
     "webpack": "^4.16.3"
   },
   "peerDependencies": {

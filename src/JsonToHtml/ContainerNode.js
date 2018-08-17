@@ -1,6 +1,7 @@
 import React from 'react';
 import {getHtmlTag} from "./getHtmltag";
 import {Node} from "./Node";
+import {NodePropTypes} from "./NodePropTypes";
 
 export function ContainerNode({node, config}) {
   const HtmlTag = getHtmlTag(config, node.type);
@@ -10,3 +11,5 @@ export function ContainerNode({node, config}) {
     </HtmlTag>
   );
 }
+
+ContainerNode.propTypes = NodePropTypes;
