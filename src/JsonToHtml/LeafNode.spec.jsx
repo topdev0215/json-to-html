@@ -1,6 +1,6 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import {LeafNode} from "./LeafNode";
+import {LeafNode} from './LeafNode';
 
 describe('Leaf Node', () => {
 

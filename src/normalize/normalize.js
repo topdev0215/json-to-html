@@ -18,8 +18,8 @@ function normalizeNode(node, userValidationRules) {
 
 function normalizeChildrenNodes(nodes, userValidationRules) {
   return nodes
-      .map(node => normalizeNode(node, userValidationRules))
-      .filter(node => node !== undefined);
+    .map(node => normalizeNode(node, userValidationRules))
+    .filter(node => node !== undefined);
 }
 
 function isValidNode(node, userValidationRules) {

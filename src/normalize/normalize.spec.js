@@ -15,16 +15,16 @@ describe('normalize', () => {
           text: 'This is a valid paragraph',
         },
       ],
-    })
+    });
   });
 
   it('should leave unchanged valid document', () => {
-    expect(normalize(document)).to.deep.equal(document)
+    expect(normalize(document)).to.deep.equal(document);
   });
 
   it('should allow user to define validation rules', () => {
     const validationRules = [
-      node => node.type === "quote" && Boolean(node.text),
+      node => node.type === 'quote' && Boolean(node.text),
     ];
 
     expect(normalize(documentWithInvalidQuote, validationRules)).to.deep.equal({
@@ -40,6 +40,6 @@ describe('normalize', () => {
           ],
         },
       ],
-    })
+    });
   });
 });

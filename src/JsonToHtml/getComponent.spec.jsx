@@ -1,7 +1,7 @@
 import React from 'react';
 import {expect} from 'chai';
 import {shallow} from 'enzyme';
-import {getComponent} from "./getComponent";
+import {getComponent} from './getComponent';
 
 describe('Get Html Tag', () => {
 
@@ -16,6 +16,6 @@ describe('Get Html Tag', () => {
   it('should return a default component when node type is not present in config', () => {
     const Component = getComponent({}, 'lorem');
 
-    expect(shallow(<Component/>).html()).to.equal('<div class="type-not-present-in-config"></div>')
+    expect(shallow(<Component/>).html()).to.equal('<div class="type-not-present-in-config"></div>');
   });
 });

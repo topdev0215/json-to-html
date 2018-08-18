@@ -2,7 +2,7 @@ import React from 'react';
 import chai from 'chai';
 import {shallow} from 'enzyme';
 import document from '../jsonExamples/document';
-import {JsonToHtml} from "./JsonToHtml";
+import {JsonToHtml} from './JsonToHtml';
 
 describe('Leaf Node', () => {
 
@@ -23,7 +23,7 @@ describe('Leaf Node', () => {
         '<blockquote>' +
           '<p>This paragraph is nested within a quote</p>' +
         '</blockquote>' +
-      '</div>'
+      '</div>',
     );
   });
 });

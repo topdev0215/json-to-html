@@ -1,10 +1,10 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import chai, {expect} from 'chai'
-import chaiEnzyme from 'chai-enzyme'
-import {LeafNode} from "./LeafNode";
-import {ContainerNode} from "./ContainerNode";
-import {Node} from "./Node";
+import chai, {expect} from 'chai';
+import chaiEnzyme from 'chai-enzyme';
+import {LeafNode} from './LeafNode';
+import {ContainerNode} from './ContainerNode';
+import {Node} from './Node';
 
 chai.use(chaiEnzyme());
 

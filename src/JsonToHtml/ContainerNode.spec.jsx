@@ -1,6 +1,6 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import {ContainerNode} from "./ContainerNode";
+import {ContainerNode} from './ContainerNode';
 
 describe('Leaf Node', () => {
 
@@ -10,7 +10,7 @@ describe('Leaf Node', () => {
   };
 
   it('should render properly', () => {
-    const node = {type: "quote", nodes: []};
+    const node = {type: 'quote', nodes: []};
     const renderedNode = shallow(<ContainerNode node={node} config={config}/>);
 
     expect(renderedNode).toMatchSnapshot();

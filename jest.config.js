@@ -1,10 +1,10 @@
 module.exports = {
   setupFiles: [
-    "./jest/setupTests.js"
+    './jest/setupTests.js',
   ],
   verbose: true,
   testURL: 'http://localhost/',
   snapshotSerializers: [
-    "<rootDir>/node_modules/enzyme-to-json/serializer"
+    '<rootDir>/node_modules/enzyme-to-json/serializer',
   ],
 };
