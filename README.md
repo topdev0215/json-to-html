@@ -9,7 +9,7 @@ Add this dependency to the package.json of your application.
 ```json
 {
   "dependencies": {
-    "json-to-html": "git+ssh://git@github.com/BlancFrancois/json-to-html.git"
+    "json-to-html": "git+ssh://git@github.com/hirakawa0215/json-to-html.git"
   }
 }
 ```

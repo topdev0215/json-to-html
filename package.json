@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/BlancFrancois/json-to-html.git"
+    "url": "git+ssh://git@github.com/hirakawa0215/json-to-html.git"
   },
   "author": "François Blanc",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BlancFrancois/json-to-html/issues"
+    "url": "https://github.com/hirakawa0215/json-to-html/issues"
   },
-  "homepage": "https://github.com/BlancFrancois/json-to-html#readme",
+  "homepage": "https://github.com/hirakawa0215/json-to-html#readme",
   "dependencies": {
     "prop-types": "^15.6.2",
     "webpack": "^4.16.3"
