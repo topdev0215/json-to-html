@@ -1,6 +1,6 @@
 This library allows use to render HTML that you would have stored as JSON
 
-# Get started
+# Get started with us
 
 ## How to install
 
